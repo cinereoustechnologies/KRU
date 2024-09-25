@@ -1,0 +1,15 @@
+:root {
+    --primary-color: blue;
+    --secondery-color: red;
+    --primary-font-size: 10px;
+    --secondery-font-size:20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: var(--secondery-font-size);
+}
+h2 {
+    color: var(--secondery-color);
+    font-size: var(--primary-font-size);
+}

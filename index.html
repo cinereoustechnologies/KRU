@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+
+        }
+        .subcon {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+        }
+        .colum {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            background-color: rgb(0, 136, 255);
+        }
+        .box {
+            width: 30px;
+            height: 30px;
+            flex: 1;
+            margin: 3px;
+            background-color: aliceblue;font-size: 12px;
+        }
+        .center {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            background-color: rgb(0, 136, 255);
+        }
+        .box1 {
+            width: 30px;
+            height: 30px;
+            margin: 3px;
+            background-color: aliceblue;font-size: 12px;
+        }
+        .warp {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            background-color: rgb(0, 136, 255);
+        }
+        .box2 {
+            width: 60px;
+            height: 60px;
+            margin: 3px;
+            background-color: aliceblue;font-size: 12px;
+        }
+        .que {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgb(0, 136, 255);
+        }
+        .box4 {
+            width: 30px;
+            height: 30px;
+            margin: 3px;
+            background-color: aliceblue;font-size: 12px;
+        }
+        .que1 {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 136, 255);
+        }
+        .box3 {
+            width: 30px;
+            height: 30px;
+            margin: 3px;
+            background-color: aliceblue;font-size: 12px;
+        }
+        .que2 {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            background-color: rgb(0, 136, 255);
+        }
+        main {
+            flex-grow: 1;
+            background-color: antiquewhite;
+        }
+        footer {
+            padding: 10px;
+            background-color: brown;
+        }
+        .que5 {
+            display: flex;
+            height: 100vh;
+            background-color: blueviolet;
+        }
+        .sidebar {
+            width: 100px;
+            background-color: aliceblue;
+        }
+        .content {
+            background-color: aliceblue;
+            margin-left: 5px;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1st que -->
+    <div class="container" style="align-self: flex-end;">
+        <div class="subcon">
+
+        </div>
+    </div><br>
+
+    <!-- 2nd que -->
+    <div class="colum">
+        <div class="box">item1</div>
+        <div class="box">item2</div>
+        <div class="box">item3</div>
+    </div> <br>
+
+    <!-- 3rd que -->
+    <div class="center">
+        <div class="box1" style="flex-grow: 2;">item1</div>
+        <div class="box1" style="flex">item2</div>
+        <div class="box1">item3</div>
+    </div> <br>
+
+    <!-- 4th que -->
+    <div class="warp" style="align-self: center;">
+        <div class="box2" >item1</div>
+        <div class="box2">item2</div>
+        <div class="box2">item3</div>
+        <div class="box2" style="flex-grow: 2;">item4</div>
+        <div class="box2">item5</div>
+        <div class="box2">item6</div>
+    </div> <br>
+
+    <!-- 5th que -->
+    <div class="que">
+        <div class="box4">item1</div>
+        <div class="box4">item2</div>
+        <div class="box4">item3</div>
+    </div><br>
+
+    <!-- 6th que -->
+    <div class="que1">
+        <div class="box3" style="align-self: flex-start;">item1</div>
+        <div class="box3">item2</div>
+        <div class="box3" style="align-self: flex-end;">item3</div>
+    </div> <br>
+
+    <!-- 7th que -->
+    <div class="que2">
+        <header>header</header>
+        <main>main part</main>
+        <footer>footer</footer>
+    </div><br>
+
+    <!-- 8th que -->
+    <div class="que5">
+        <div class="sidebar">sidebar</div>
+        <div class="content">content</div>
+    </div><br>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
